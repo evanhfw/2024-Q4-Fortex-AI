@@ -4,8 +4,9 @@ import streamlit as st
 import joblib
 import matplotlib.pyplot as plt
 
-model = xgb.Booster(model_file="../model/model.json")
-X = joblib.load("../model/df.pkl")
+
+model = xgb.Booster(model_file="/mount/src/penyisihan/model/model.json")
+X = joblib.load("/mount/src/penyisihan/model/df.pkl")
 
 # UI Streamlit
 st.set_page_config(
