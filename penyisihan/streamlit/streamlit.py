@@ -5,8 +5,8 @@ import joblib
 import matplotlib.pyplot as plt
 
 
-model = xgb.Booster(model_file="/mount/src/penyisihan/model/model.json")
-X = joblib.load("/mount/src/penyisihan/model/df.pkl")
+model = xgb.Booster(model_file="/mount/src/2024-q4-fortex-ai/penyisihan/model/model.json")
+X = joblib.load("/mount/src/2024-q4-fortex-ai/penyisihan/model/df.pkl")
 
 # UI Streamlit
 st.set_page_config(
